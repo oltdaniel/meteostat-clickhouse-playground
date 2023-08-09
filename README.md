@@ -18,6 +18,14 @@ go run main.go import stations
 go run main.go import data <STATION_ID>
 ```
 
+## Starting in Grafana
+
+1. Call `https://localhost:3000`, signin with `admin/admin` and set a new password.
+2. Install clickhouse source on `http://localhost:3000/connections/datasources/grafana-clickhouse-datasource`.
+3. Create a clickhouse data source (button on top right on step 2).
+4. Use `Server address = clickhouse` and `Server port = 9000`, Save & Test.
+5. Explore the imported data on `http://localhost:3000/explore`.
+
 ## License
 
 _do what you'd like to do_

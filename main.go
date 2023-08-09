@@ -52,7 +52,7 @@ const (
 		tsun Nullable(Int16),
 		coco Nullable(Int16)
 	) engine = MergeTree ORDER BY measured_at PARTITION BY station`
-	INSERT_STATION      = `INSERT INTO stations`
+	INSERT_STATION      = `INSERT INTO stations(id, display_name, country, latitude, longitude, timezone) VALUES (?, ?, ?, ?, ?, ?)`
 	INSERT_STATION_DATA = `INSERT INTO station_data`
 )
 
