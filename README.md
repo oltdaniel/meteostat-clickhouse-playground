@@ -2,6 +2,9 @@
 
 Tool to import data from meteostat into clickhouse to play around in grafana.
 
+![grafik](https://github.com/oltdaniel/meteostat-clickhouse-playground/assets/53529846/6d7a8cf5-08bc-4b3b-ba96-e201cdcc196d)
+> Example Heatmap showing the coverage of the different weather stations listed from meteostat.
+
 ## Installation
 
 ```bash
